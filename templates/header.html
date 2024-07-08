@@ -1,0 +1,31 @@
+<script>
+    function resizeHeaderOnScroll() {
+        const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+        shrinkOn = 200,
+        headerEl = document.getElementById('js-header');
+        
+        if (distanceY > shrinkOn) {
+            headerEl.classList.add("smaller");
+        } else {
+            headerEl.classList.remove("smaller");
+        }
+    }
+    window.addEventListener('scroll', resizeHeaderOnScroll);
+</script>
+<link rel="stylesheet" href="css/header.css">
+<div id="wrapper">
+    <header id="js-header">
+        <div class="container clearfix">
+            <a href="/index.html">
+                <h1 id="logo">
+                    UTD
+                </h1>
+            </a>
+            <nav>
+                <a href="#bacon">Registro Profesores</a>
+                <a href="#sausage">Revisar profesores</a>
+            </nav>
+        </div>
+    </header>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
